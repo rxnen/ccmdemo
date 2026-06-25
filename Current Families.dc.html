@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#FBF3E2;font-family:'Hanken Grotesk',system-ui,sans-serif;color:#16324F;-webkit-font-smoothing:antialiased}
+  ::selection{background:#F5B82E;color:#16324F}
+  a{color:inherit}
+</style>
+</helmet>
+
+<div data-screen-label="Current Families page" style="width:100%;overflow-x:hidden">
+
+  <!-- NAV -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(251,243,226,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(22,50,79,.08)">
+    <nav style="max-width:1200px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="CCM Homepage.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+        <svg viewBox="0 0 56 76" style="width:30px;display:block"><path d="M28 2c-2 7-6 11-11 14 5 1 9-1 11-4 2 3 6 5 11 4-5-3-9-7-11-14z" fill="#2E7D5B"></path><path d="M28 8c-4 6-9 9-15 10 5 3 11 2 15-2 4 4 10 5 15 2-6-1-11-4-15-10z" fill="#3FA67A"></path><path d="M28 11v11" stroke="#2E7D5B" stroke-width="4" stroke-linecap="round"></path><path d="M28 20c11 0 18 9 18 26 0 16-8 28-18 28S10 62 10 46c0-17 7-26 18-26z" fill="#F5B82E"></path><g stroke="#E0A015" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none"><path d="M28 26v44M19 34l9 8 9-8M14 47l14 11 14-11M17 59l11 8 11-8"></path></g></svg>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;letter-spacing:-.01em;color:#16324F;line-height:1">Contra&nbsp;Costa<br><span style="color:#2E7D5B">Midrasha</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:26px;white-space:nowrap">
+        <a href="CCM Homepage.dc.html#wednesday" style="font-weight:600;font-size:15px;text-decoration:none">Wednesday Nights</a>
+        <a href="Better Together.dc.html" style="font-weight:600;font-size:15px;text-decoration:none">Be The Change</a>
+        <a href="Retreats.dc.html" style="font-weight:600;font-size:15px;text-decoration:none">Retreats</a>
+        <a href="For Parents.dc.html" style="font-weight:600;font-size:15px;text-decoration:none">For Parents</a>
+        <a href="#" style="display:inline-flex;align-items:center;gap:8px;background:#2E7D5B;color:#fff;font-weight:800;font-size:15px;padding:11px 20px;border-radius:999px;text-decoration:none;box-shadow:0 6px 16px rgba(46,125,91,.32)" style-hover="transform:translateY(-2px)">Pay tuition →</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER -->
+  <section data-label="Header" style="background:radial-gradient(120% 90% at 15% 0%,#E6F1EA 0%,#FBF3E2 60%);padding:56px 32px 44px">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(46,125,91,.25);color:#2E7D5B;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:999px">🍍 Current families</div>
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:46px;line-height:1.05;letter-spacing:-.025em;margin:16px 0 0;color:#16324F">Welcome back — everything you need this season</h1>
+      <p style="font-size:18px;line-height:1.55;color:#42566a;max-width:620px;margin:12px 0 0">Dates, forms, payments, and logistics for enrolled Midrasha families, all in one place. Member-only details that used to live in your inbox.</p>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section data-label="Quick actions" style="background:#FBF3E2;padding:8px 32px 24px">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <a href="#" style="background:#fff;border-radius:18px;padding:22px;text-decoration:none;border:1px solid rgba(22,50,79,.07);box-shadow:0 10px 26px rgba(22,50,79,.07);display:block" style-hover="transform:translateY(-4px);box-shadow:0 18px 36px rgba(22,50,79,.12)"><div style="font-size:26px">💳</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;margin-top:12px;color:#16324F">Pay tuition</div><div style="font-size:14px;color:#6b7c8a;margin-top:3px">Secure payment via PayBee →</div></a>
+      <a href="#" style="background:#fff;border-radius:18px;padding:22px;text-decoration:none;border:1px solid rgba(22,50,79,.07);box-shadow:0 10px 26px rgba(22,50,79,.07);display:block" style-hover="transform:translateY(-4px);box-shadow:0 18px 36px rgba(22,50,79,.12)"><div style="font-size:26px">📝</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;margin-top:12px;color:#16324F">Forms & permissions</div><div style="font-size:14px;color:#6b7c8a;margin-top:3px">Retreat & medical forms →</div></a>
+      <a href="#" style="background:#fff;border-radius:18px;padding:22px;text-decoration:none;border:1px solid rgba(22,50,79,.07);box-shadow:0 10px 26px rgba(22,50,79,.07);display:block" style-hover="transform:translateY(-4px);box-shadow:0 18px 36px rgba(22,50,79,.12)"><div style="font-size:26px">📨</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;margin-top:12px;color:#16324F">Family newsletter</div><div style="font-size:14px;color:#6b7c8a;margin-top:3px">Subscribe / read the latest →</div></a>
+      <a href="mailto:hello@ccmidrasha.com" style="background:#fff;border-radius:18px;padding:22px;text-decoration:none;border:1px solid rgba(22,50,79,.07);box-shadow:0 10px 26px rgba(22,50,79,.07);display:block" style-hover="transform:translateY(-4px);box-shadow:0 18px 36px rgba(22,50,79,.12)"><div style="font-size:26px">💬</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;margin-top:12px;color:#16324F">Reach the team</div><div style="font-size:14px;color:#6b7c8a;margin-top:3px">Email Devra →</div></a>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section data-label="Season calendar" style="background:#fff;padding:80px 32px">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#2E7D5B">This season</div>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:36px;line-height:1.1;letter-spacing:-.02em;margin:8px 0 0;color:#16324F">Member calendar</h2>
+        </div>
+        <div style="font-size:13.5px;color:#8a7a55;background:#FCEBC4;padding:8px 14px;border-radius:10px">Placeholder dates — replace with your real Jan/Feb schedule.</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px">
+        <!-- January -->
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;margin:0 0 14px;color:#16324F;border-bottom:3px solid #F5B82E;padding-bottom:8px;display:inline-block">January</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">8</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night resumes</div><div style="font-size:14px;color:#6b7c8a">7:15–9:30 pm · B'nai Tikvah</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">15</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">Electives + grade groups</div></div></div>
+            <div style="display:flex;gap:16px;background:#E6F1EA;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#2E7D5B;line-height:1">19</div><div style="font-size:11px;font-weight:700;color:#5a7d6c;text-transform:uppercase">Sun</div></div><div><div style="font-weight:800;color:#16324F">Better Together gathering</div><div style="font-size:14px;color:#6b7c8a">Monthly Be The Change meet-up</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">22</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">7:15–9:30 pm</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">29</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">Winter Retreat forms due</div></div></div>
+          </div>
+        </div>
+        <!-- February -->
+        <div>
+          <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;margin:0 0 14px;color:#16324F;border-bottom:3px solid #2E7D5B;padding-bottom:8px;display:inline-block">February</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:16px;background:#FDEFE0;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#C2452D;line-height:1">7–9</div><div style="font-size:11px;font-weight:700;color:#a8634f;text-transform:uppercase">Fri–Sun</div></div><div><div style="font-weight:800;color:#16324F">❄️ Winter Retreat</div><div style="font-size:14px;color:#6b7c8a">Permission + payment required in advance</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">12</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">Retreat recap + photos</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">19</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">7:15–9:30 pm</div></div></div>
+            <div style="display:flex;gap:16px;background:#E6F1EA;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#2E7D5B;line-height:1">23</div><div style="font-size:11px;font-weight:700;color:#5a7d6c;text-transform:uppercase">Sun</div></div><div><div style="font-weight:800;color:#16324F">Hamsa Project service day</div><div style="font-size:14px;color:#6b7c8a">Be The Change · location TBA</div></div></div>
+            <div style="display:flex;gap:16px;background:#FBF3E2;border-radius:14px;padding:14px 16px;align-items:center"><div style="flex:none;width:52px;text-align:center"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;color:#E0A015;line-height:1">26</div><div style="font-size:11px;font-weight:700;color:#8a7a55;text-transform:uppercase">Wed</div></div><div><div style="font-weight:800;color:#16324F">Wednesday night</div><div style="font-size:14px;color:#6b7c8a">7:15–9:30 pm</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT RETREAT PREP + LOGISTICS -->
+  <section data-label="Retreat prep & logistics" style="background:#FBF3E2;padding:80px 32px">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start">
+      <!-- Retreat prep -->
+      <div style="background:#16324F;border-radius:24px;padding:34px;box-shadow:0 18px 40px rgba(22,50,79,.18)">
+        <div style="display:inline-block;background:rgba(242,105,60,.2);color:#FFB596;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px">Coming up · Winter Retreat</div>
+        <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;margin:14px 0 0;color:#fff">Getting ready for the woods</h3>
+        <p style="font-size:15.5px;line-height:1.6;color:#bccadb;margin:10px 0 0">Permission form and payment are due <strong style="color:#fff">[deadline]</strong>. Here's what your teen should pack:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:18px">
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Warm layers & rain jacket</div>
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Sleeping bag & pillow</div>
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Closed-toe shoes</div>
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Water bottle & toiletries</div>
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Any medications (labeled)</div>
+          <div style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> A good attitude 🙂</div>
+        </div>
+        <a href="#" style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:#F5B82E;color:#16324F;font-weight:800;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none" style-hover="background:#E0A015">Complete retreat forms →</a>
+      </div>
+      <!-- Wednesday logistics -->
+      <div style="background:#fff;border:1px solid rgba(22,50,79,.1);border-radius:24px;padding:32px;box-shadow:0 16px 38px rgba(22,50,79,.08)">
+        <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;margin:0;color:#16324F">Wednesday-night basics</h3>
+        <div style="display:flex;flex-direction:column;margin-top:12px">
+          <div style="display:flex;gap:12px;padding:13px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:18px">⏰</div><div><div style="font-weight:800;color:#16324F;font-size:15px">7:15–9:30 pm</div><div style="font-size:14px;color:#6b7c8a">Curbside drop-off & pick-up at the front entrance</div></div></div>
+          <div style="display:flex;gap:12px;padding:13px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:18px">🎒</div><div><div style="font-weight:800;color:#16324F;font-size:15px">What to bring</div><div style="font-size:14px;color:#6b7c8a">Just your teen (and a friend, if they'd like) — we provide the donuts</div></div></div>
+          <div style="display:flex;gap:12px;padding:13px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:18px">🚗</div><div><div style="font-weight:800;color:#16324F;font-size:15px">Carpools</div><div style="font-size:14px;color:#6b7c8a">Families across the county share rides — ask us to connect you</div></div></div>
+          <div style="display:flex;gap:12px;padding:13px 0"><div style="font-size:18px">🌧️</div><div><div style="font-weight:800;color:#16324F;font-size:15px">Closures</div><div style="font-size:14px;color:#6b7c8a">We'll email and post any weather or holiday cancellations</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section data-label="Contact" style="background:#fff;padding:72px 32px">
+    <div style="max-width:880px;margin:0 auto;background:#E6F1EA;border-radius:26px;padding:40px;text-align:center">
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;line-height:1.1;letter-spacing:-.02em;margin:0;color:#16324F">Questions? We're one email away.</h2>
+      <p style="font-size:17px;line-height:1.6;color:#3c5247;margin:12px auto 0;max-width:540px">Tuition, scholarships, scheduling, carpools, or anything else — reach Devra and the Midrasha team anytime.</p>
+      <a href="mailto:hello@ccmidrasha.com" style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:#2E7D5B;color:#fff;font-weight:800;font-size:17px;padding:15px 28px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(46,125,91,.3)" style-hover="transform:translateY(-2px)">hello@ccmidrasha.com →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#102A43;color:#c3d2e0;padding:64px 32px 36px">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <svg viewBox="0 0 56 76" style="width:30px;display:block"><path d="M28 2c-2 7-6 11-11 14 5 1 9-1 11-4 2 3 6 5 11 4-5-3-9-7-11-14z" fill="#2E7D5B"></path><path d="M28 20c11 0 18 9 18 26 0 16-8 28-18 28S10 62 10 46c0-17 7-26 18-26z" fill="#F5B82E"></path><g stroke="#E0A015" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none"><path d="M28 26v44M14 47l14 11 14-11"></path></g></svg>
+          <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;color:#fff">Contra Costa Midrasha</span>
+        </div>
+        <p style="font-size:15px;line-height:1.6;margin:16px 0 0;max-width:280px;color:#9fb3c6">Where Jewish teens are seen and heard. Wednesday nights in Walnut Creek — drop in any week.</p>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Three ways in</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><a href="CCM Homepage.dc.html#wednesday" style="text-decoration:none;color:#c3d2e0">Wednesday Nights</a><a href="Better Together.dc.html" style="text-decoration:none;color:#c3d2e0">Be The Change</a><a href="Retreats.dc.html" style="text-decoration:none;color:#c3d2e0">Retreats</a></div>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Visit</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><a href="For Parents.dc.html" style="text-decoration:none;color:#c3d2e0">For Parents</a><a href="Current Families.dc.html" style="text-decoration:none;color:#c3d2e0">Current Families</a><a href="CCM Homepage.dc.html#try" style="text-decoration:none;color:#c3d2e0">Try a Wednesday</a></div>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Find us</div>
+        <div style="font-size:15px;line-height:1.7;color:#9fb3c6">Congregation B'nai Tikvah<br>Walnut Creek, CA<br><a href="mailto:hello@ccmidrasha.com" style="color:#F5B82E;text-decoration:none">hello@ccmidrasha.com</a></div>
+      </div>
+    </div>
+    <div style="max-width:1140px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:#7d93a8">© 2026 Contra Costa Midrasha · A welcoming home for Jewish teens in grades 8–12.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}"></script>
+</body>
+</html>

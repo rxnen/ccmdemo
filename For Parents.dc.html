@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#FBF3E2;font-family:'Hanken Grotesk',system-ui,sans-serif;color:#16324F;-webkit-font-smoothing:antialiased}
+  image-slot{display:block;width:100%;height:100%}
+  ::selection{background:#F5B82E;color:#16324F}
+  a{color:inherit}
+</style>
+</helmet>
+
+<div data-screen-label="For Parents page" style="width:100%;overflow-x:hidden">
+
+  <!-- NAV -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(251,243,226,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(22,50,79,.08)">
+    <nav style="max-width:1200px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="CCM Homepage.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+        <svg viewBox="0 0 56 76" style="width:30px;display:block"><path d="M28 2c-2 7-6 11-11 14 5 1 9-1 11-4 2 3 6 5 11 4-5-3-9-7-11-14z" fill="#2E7D5B"></path><path d="M28 8c-4 6-9 9-15 10 5 3 11 2 15-2 4 4 10 5 15 2-6-1-11-4-15-10z" fill="#3FA67A"></path><path d="M28 11v11" stroke="#2E7D5B" stroke-width="4" stroke-linecap="round"></path><path d="M28 20c11 0 18 9 18 26 0 16-8 28-18 28S10 62 10 46c0-17 7-26 18-26z" fill="#F5B82E"></path><g stroke="#E0A015" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none"><path d="M28 26v44M19 34l9 8 9-8M14 47l14 11 14-11M17 59l11 8 11-8"></path></g></svg>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;letter-spacing:-.01em;color:#16324F;line-height:1">Contra&nbsp;Costa<br><span style="color:#2E7D5B">Midrasha</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:26px;white-space:nowrap">
+        <a href="CCM Homepage.dc.html#wednesday" style="font-weight:600;font-size:15px;text-decoration:none">Wednesday Nights</a>
+        <a href="Better Together.dc.html" style="font-weight:600;font-size:15px;text-decoration:none">Be The Change</a>
+        <a href="Retreats.dc.html" style="font-weight:600;font-size:15px;text-decoration:none">Retreats</a>
+        <a href="For Parents.dc.html" style="font-weight:700;font-size:15px;text-decoration:none;color:#2E7D5B">For Parents</a>
+        <a href="CCM Homepage.dc.html#try" style="display:inline-flex;align-items:center;gap:8px;background:#F5B82E;color:#16324F;font-weight:800;font-size:15px;padding:11px 20px;border-radius:999px;text-decoration:none;box-shadow:0 6px 16px rgba(245,184,46,.4)" style-hover="transform:translateY(-2px)">Try a Wednesday →</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section data-label="Hero" style="background:radial-gradient(120% 90% at 85% -10%,#FCE6B0 0%,#FBF3E2 58%);padding:72px 32px 78px">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(46,125,91,.25);color:#2E7D5B;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:999px">For parents</div>
+        <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:54px;line-height:1.05;letter-spacing:-.025em;margin:18px 0 0;color:#16324F">Here's what Wednesday is really doing for your teen</h1>
+        <p style="font-size:19px;line-height:1.6;color:#42566a;max-width:560px;margin:18px 0 0">Midrasha is the rare weekly commitment teens defend on their own. One graduate called it his "safe haven" through the hardest stretches of high school; another said it kept her "grounded and supported" through senior-year uncertainty. That's by design — and here's exactly how.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:28px">
+          <a href="CCM Homepage.dc.html#try" style="display:inline-flex;align-items:center;gap:10px;background:#F5B82E;color:#16324F;font-weight:800;font-size:18px;padding:16px 28px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(245,184,46,.42)" style-hover="transform:translateY(-2px)">Bring your teen to try a Wednesday →</a>
+          <a href="#logistics" onClick="{{ go.logistics }}" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#16324F;font-weight:800;font-size:18px;padding:16px 26px;border-radius:999px;text-decoration:none;border:2px solid rgba(22,50,79,.15)" style-hover="border-color:#16324F">Logistics & tuition →</a>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div style="border-radius:26px;overflow:hidden;border:8px solid #fff;box-shadow:0 24px 54px rgba(22,50,79,.16);rotate:1.4deg;aspect-ratio:5/4"><image-slot id="par-hero" shape="rect" placeholder="Teens together — warm, candid, well-lit"></image-slot></div>
+        <div style="position:absolute;left:-20px;bottom:26px;background:#16324F;color:#fff;padding:14px 18px;border-radius:16px;box-shadow:0 16px 30px rgba(22,50,79,.28);rotate:-4deg"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;line-height:1;color:#F5B82E">20</div><div style="font-size:12.5px;font-weight:600;opacity:.85;margin-top:3px">dedicated staff &<br>mentors</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIVE VALUE PROPS -->
+  <section data-label="Why it matters" style="background:#fff;padding:92px 32px">
+    <div style="max-width:1140px;margin:0 auto">
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:38px;line-height:1.1;letter-spacing:-.02em;margin:0;color:#16324F;text-align:center;max-width:640px;margin-left:auto;margin-right:auto">Five things Midrasha gives your teen</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px">
+        <div style="background:#FBF3E2;border-radius:20px;padding:26px;border:1px solid rgba(22,50,79,.06)"><div style="width:44px;height:44px;border-radius:12px;background:#FDF4DF;display:flex;align-items:center;justify-content:center;font-size:21px">🌙</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;margin:14px 0 0;color:#16324F">A weekly unplugged reset</h3><p style="font-size:15px;line-height:1.55;color:#42566a;margin:8px 0 0">Face-to-face friendship with Jewish peers from across the county — a genuine break from screens, school stress, and social pressure, in a warm and safe environment.</p></div>
+        <div style="background:#FBF3E2;border-radius:20px;padding:26px;border:1px solid rgba(22,50,79,.06)"><div style="width:44px;height:44px;border-radius:12px;background:#E6F1EA;display:flex;align-items:center;justify-content:center;font-size:21px">📚</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;margin:14px 0 0;color:#16324F">A curriculum that meets them where they are</h3><p style="font-size:15px;line-height:1.55;color:#42566a;margin:8px 0 0">Juniors get a therapist-built stress-management course; seniors prepare for real life after high school. (Grade by grade below.)</p></div>
+        <div style="background:#FBF3E2;border-radius:20px;padding:26px;border:1px solid rgba(22,50,79,.06)"><div style="width:44px;height:44px;border-radius:12px;background:#FDF4DF;display:flex;align-items:center;justify-content:center;font-size:21px">🤝</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;margin:14px 0 0;color:#16324F">Service that means something</h3><p style="font-size:15px;line-height:1.55;color:#42566a;margin:8px 0 0">Through Be The Change, teens build yearlong friendships with seniors and lead hands-on projects — earning service hours while living Jewish values.</p></div>
+        <div style="background:#FBF3E2;border-radius:20px;padding:26px;border:1px solid rgba(22,50,79,.06)"><div style="width:44px;height:44px;border-radius:12px;background:#E6F1EA;display:flex;align-items:center;justify-content:center;font-size:21px">✡️</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;margin:14px 0 0;color:#16324F">Jewish identity that sticks</h3><p style="font-size:15px;line-height:1.55;color:#42566a;margin:8px 0 0">Not memorization — belonging. Teens leave proud of who they are, with mentors they stay in touch with for years.</p></div>
+        <div style="background:#FBF3E2;border-radius:20px;padding:26px;border:1px solid rgba(22,50,79,.06)"><div style="width:44px;height:44px;border-radius:12px;background:#FDF4DF;display:flex;align-items:center;justify-content:center;font-size:21px">🍍</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;margin:14px 0 0;color:#16324F">Every Jewish teen belongs</h3><p style="font-size:15px;line-height:1.55;color:#42566a;margin:8px 0 0">Interfaith families, mixed-heritage kids, no bar/bat mitzvah, no synagogue, no Hebrew — truly all are welcome, and our teens feel it from day one.</p></div>
+        <div style="background:#16324F;border-radius:20px;padding:26px;display:flex;flex-direction:column;justify-content:center"><div style="font-family:'Caveat',cursive;font-weight:700;font-size:24px;color:#F5B82E;line-height:1.2">"A safe haven through the hardest stretches of high school."</div><div style="font-size:13px;font-weight:600;color:#9fb3c6;margin-top:10px">— a recent graduate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM BY GRADE -->
+  <section data-label="Curriculum by grade" style="background:linear-gradient(180deg,#FBF3E2,#FCE9C4);padding:92px 32px">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="text-align:center;max-width:660px;margin:0 auto">
+        <div style="font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#2E7D5B">Grade by grade</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:38px;line-height:1.1;letter-spacing:-.02em;margin:10px 0 0;color:#16324F">A program that grows with your teen</h2>
+        <p style="font-size:17px;line-height:1.55;color:#42566a;margin:14px 0 0">Every year has its own focus — meeting teens exactly where they are.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px">
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(22,50,79,.1);border:1px solid rgba(22,50,79,.06)"><div style="height:6px;background:#F5B82E"></div><div style="padding:24px"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#E0A015">8–9</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;margin:8px 0 0;color:#16324F">Find your people</h3><p style="font-size:14.5px;line-height:1.55;color:#42566a;margin:8px 0 0">A core group of peers from across the county, the foundations of Jewish identity, and the first real Midrasha friendships.</p></div></div>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(22,50,79,.1);border:1px solid rgba(22,50,79,.06)"><div style="height:6px;background:#3FA67A"></div><div style="padding:24px"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#2E7D5B">10</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;margin:8px 0 0;color:#16324F">Go deeper</h3><p style="font-size:14.5px;line-height:1.55;color:#42566a;margin:8px 0 0">Electives, bigger conversations, and the chance to step into leadership — including Be The Change service programs.</p></div></div>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(22,50,79,.1);border:1px solid rgba(22,50,79,.06)"><div style="height:6px;background:#2E7D5B"></div><div style="padding:24px"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#2E7D5B">11</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;margin:8px 0 0;color:#16324F">Rodef Shalom</h3><p style="font-size:14.5px;line-height:1.55;color:#42566a;margin:8px 0 0">A stress-management course built by a therapist for the hardest academic year — real tools for a high-pressure junior fall.</p></div></div>
+        <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(22,50,79,.1);border:1px solid rgba(22,50,79,.06)"><div style="height:6px;background:#16324F"></div><div style="padding:24px"><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:#16324F">12</div><h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;margin:8px 0 0;color:#16324F">Ready for what's next</h3><p style="font-size:14.5px;line-height:1.55;color:#42566a;margin:8px 0 0">A year of preparing for life after high school: building community, handling money, taking care of themselves, and staying Jewish in college.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGISTICS + TUITION -->
+  <section id="logistics" data-label="Logistics & tuition" style="background:#fff;padding:92px 32px">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
+      <div style="background:#FBF3E2;border:1px solid rgba(22,50,79,.1);border-radius:24px;padding:32px;box-shadow:0 16px 38px rgba(22,50,79,.08)">
+        <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;margin:0;color:#16324F">The logistics</h3>
+        <div style="display:flex;flex-direction:column;margin-top:14px">
+          <div style="display:flex;gap:14px;padding:15px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:20px">🗓️</div><div><div style="font-weight:800;color:#16324F">When</div><div style="font-size:15px;color:#42566a;margin-top:2px">Wednesdays, 7:15–9:30 pm, during the school year. <a href="Current Families.dc.html" style="color:#2E7D5B;font-weight:700">See the calendar →</a></div></div></div>
+          <div style="display:flex;gap:14px;padding:15px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:20px">📍</div><div><div style="font-weight:800;color:#16324F">Where</div><div style="font-size:15px;color:#42566a;margin-top:2px">Congregation B'nai Tikvah, Walnut Creek. <a href="#" style="color:#2E7D5B;font-weight:700">Map →</a></div></div></div>
+          <div style="display:flex;gap:14px;padding:15px 0;border-bottom:1px solid rgba(22,50,79,.1)"><div style="font-size:20px">🚗</div><div><div style="font-weight:800;color:#16324F">Drop-off & pick-up</div><div style="font-size:15px;color:#42566a;margin-top:2px">Curbside at the front entrance. Carpools welcome — many families share rides across town.</div></div></div>
+          <div style="display:flex;gap:14px;padding:15px 0"><div style="font-size:20px">🍩</div><div><div style="font-weight:800;color:#16324F">First night is free</div><div style="font-size:15px;color:#42566a;margin-top:2px">Any week of the year. Just bring your teen — and a friend, if they'd like.</div></div></div>
+        </div>
+      </div>
+      <div style="background:#16324F;border-radius:24px;padding:32px;box-shadow:0 18px 40px rgba(22,50,79,.18)">
+        <h3 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;margin:0;color:#fff">Tuition & scholarships</h3>
+        <div style="display:flex;align-items:baseline;gap:10px;margin-top:18px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:42px;color:#F5B82E">$___</span><span style="color:#9fb3c6;font-weight:600">/ year — publish the real number</span></div>
+        <p style="font-size:16px;line-height:1.6;color:#c3d2e0;margin:16px 0 0"><strong style="color:#fff">Sliding scale and scholarships are available, no questions asked.</strong> Cost should never keep a teen from Midrasha — if the number is a barrier, talk to us and we'll make it work.</p>
+        <ul style="list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Sliding-scale tuition based on what your family can manage</li>
+          <li style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> Need-based scholarships, kept completely confidential</li>
+          <li style="display:flex;gap:10px;color:#c3d2e0;font-size:15px"><span style="color:#F5B82E;font-weight:800">✓</span> The first Wednesday is always free</li>
+        </ul>
+        <a href="mailto:hello@ccmidrasha.com" style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;background:#F5B82E;color:#16324F;font-weight:800;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none" style-hover="background:#E0A015">Ask Devra about tuition →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section data-label="Parent FAQ" style="background:#E6F1EA;padding:92px 32px">
+    <div style="max-width:840px;margin:0 auto">
+      <div style="text-align:center">
+        <div style="font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#2E7D5B">Parent questions</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:38px;line-height:1.1;letter-spacing:-.02em;margin:10px 0 0;color:#16324F">The things parents ask us most</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:36px">
+        <sc-for list="{{ faqs }}" as="item" hint-placeholder-count="6">
+          <div style="background:#fff;border-radius:16px;border:1px solid rgba(22,50,79,.08);overflow:hidden">
+            <button type="button" onClick="{{ item.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#16324F">{{ item.q }}</span>
+              <span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FBF3E2;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#2E7D5B">{{ item.sign }}</span>
+            </button>
+            <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 24px 22px;font-size:16px;line-height:1.6;color:#42566a">{{ item.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section data-label="CTA" style="background:#FBF3E2;padding:84px 32px">
+    <div style="max-width:880px;margin:0 auto;text-align:center">
+      <svg viewBox="0 0 56 76" style="width:60px;margin:0 auto;display:block"><path d="M28 2c-2 7-6 11-11 14 5 1 9-1 11-4 2 3 6 5 11 4-5-3-9-7-11-14z" fill="#2E7D5B"></path><path d="M28 20c11 0 18 9 18 26 0 16-8 28-18 28S10 62 10 46c0-17 7-26 18-26z" fill="#F5B82E"></path><g stroke="#E0A015" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none"><path d="M28 26v44M14 47l14 11 14-11M17 59l11 8 11-8"></path></g></svg>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:36px;line-height:1.1;letter-spacing:-.02em;margin:16px 0 0;color:#16324F">The best way to understand Midrasha is to let your teen try it</h2>
+      <p style="font-size:18px;line-height:1.6;color:#42566a;margin:14px auto 0;max-width:560px">Pick any Wednesday. The first one's free, there's a pineapple waiting, and you'll know more after one night than any website can tell you.</p>
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:26px">
+        <a href="CCM Homepage.dc.html#try" style="display:inline-flex;align-items:center;gap:10px;background:#F5B82E;color:#16324F;font-weight:800;font-size:18px;padding:16px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(245,184,46,.4)" style-hover="transform:translateY(-2px)">Try a Wednesday night →</a>
+        <a href="Current Families.dc.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#16324F;font-weight:800;font-size:18px;padding:16px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(22,50,79,.15)" style-hover="border-color:#16324F">Already enrolled? Current families →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#102A43;color:#c3d2e0;padding:64px 32px 36px">
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <svg viewBox="0 0 56 76" style="width:30px;display:block"><path d="M28 2c-2 7-6 11-11 14 5 1 9-1 11-4 2 3 6 5 11 4-5-3-9-7-11-14z" fill="#2E7D5B"></path><path d="M28 20c11 0 18 9 18 26 0 16-8 28-18 28S10 62 10 46c0-17 7-26 18-26z" fill="#F5B82E"></path><g stroke="#E0A015" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none"><path d="M28 26v44M14 47l14 11 14-11"></path></g></svg>
+          <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;color:#fff">Contra Costa Midrasha</span>
+        </div>
+        <p style="font-size:15px;line-height:1.6;margin:16px 0 0;max-width:280px;color:#9fb3c6">Where Jewish teens are seen and heard. Wednesday nights in Walnut Creek — drop in any week.</p>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Three ways in</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><a href="CCM Homepage.dc.html#wednesday" style="text-decoration:none;color:#c3d2e0">Wednesday Nights</a><a href="Better Together.dc.html" style="text-decoration:none;color:#c3d2e0">Be The Change</a><a href="Retreats.dc.html" style="text-decoration:none;color:#c3d2e0">Retreats</a></div>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Visit</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><a href="For Parents.dc.html" style="text-decoration:none;color:#c3d2e0">For Parents</a><a href="Current Families.dc.html" style="text-decoration:none;color:#c3d2e0">Current Families</a><a href="CCM Homepage.dc.html#try" style="text-decoration:none;color:#c3d2e0">Try a Wednesday</a></div>
+      </div>
+      <div>
+        <div style="font-weight:800;color:#fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">Find us</div>
+        <div style="font-size:15px;line-height:1.7;color:#9fb3c6">Congregation B'nai Tikvah<br>Walnut Creek, CA<br><a href="mailto:hello@ccmidrasha.com" style="color:#F5B82E;text-decoration:none">hello@ccmidrasha.com</a></div>
+      </div>
+    </div>
+    <div style="max-width:1140px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:#7d93a8">© 2026 Contra Costa Midrasha · A welcoming home for Jewish teens in grades 8–12.</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = {
+    open: 0,
+    faqs: [
+      { q: "Does my teen need to be religious or know Hebrew?", a: "Not at all. There's no Hebrew, no synagogue membership, and no bar or bat mitzvah required. Midrasha is about belonging and friendship, not memorization — teens of every background and level of observance fit right in." },
+      { q: "We're an interfaith or mixed-heritage family. Is that okay?", a: "Absolutely. Interfaith families, mixed-heritage kids, and teens with no formal Jewish education are all genuinely welcome here — and our teens will tell you they feel it from day one." },
+      { q: "What does it cost?", a: "Tuition is $___ per year (we'll publish the real number), with a sliding scale and need-based scholarships available, kept completely confidential. Cost should never keep a teen from Midrasha — if it's a barrier, email Devra and we'll make it work." },
+      { q: "What if we can't make it every Wednesday?", a: "That's exactly what Be The Change is for. Teens can make a real difference once a month — through Better Together and the Hamsa Project — with no weekly attendance required to start." },
+      { q: "Can my teen join mid-year, or as a junior or senior?", a: "Yes. Most teens start in 8th or 9th grade, but plenty join later — several recent graduates joined in 10th grade or beyond. You can register any time during the year, or just show up one Wednesday." },
+      { q: "Is it well supervised?", a: "Yes. Around 20 dedicated staff and mentors run the program in a warm, safe environment at Congregation B'nai Tikvah in Walnut Creek. Many of those mentors stay in touch with teens for years." }
+    ]
+  };
+
+  toggle = (i) => () => this.setState(s => ({ open: s.open === i ? -1 : i }));
+
+  scrollTo = (id) => (e) => {
+    if (e) e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+  };
+
+  renderVals() {
+    return {
+      go: { logistics: this.scrollTo('logistics') },
+      faqs: this.state.faqs.map((f, i) => ({
+        q: f.q,
+        a: f.a,
+        open: this.state.open === i,
+        sign: this.state.open === i ? '−' : '+',
+        toggle: this.toggle(i)
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
